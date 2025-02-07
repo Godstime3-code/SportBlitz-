@@ -323,3 +323,20 @@ tommorrowScoreBtn.addEventListener('click', ()=>{
 getTommorrowEvent();
 });
 
+//setInterval(getMatchEvent, 30000);
+
+const refresh_btn = document.getElementById('js_refresh_btn');
+
+let isRefreshTurnOn = true;
+let refreshId;
+refresh_btn.addEventListener('click',()=>{
+  if(isRefreshTurnOn){
+    refresh_btn.textContent = 'TURN OFF';
+    refreshId = setInterval(getMatchEvent, 30000);
+    isRefreshTurnOn = false;
+  }else{
+    isRefreshTurnOn = true;
+    clearInterval(refreshId)
+    refresh_btn.textContent = 'TURN ON'
+  }
+})
