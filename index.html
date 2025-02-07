@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- <meta http-equiv="refresh" content="30"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>SportBlitzs - A Live Football Score</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="top">
+  <header class="app-header">
+    <span class="logo">SportBlitz</span>
+  </header>
+  <nav class="app-main-nav">
+    <div class="nav-date">
+      <a href="" class="active">Today</a>
+      <span>|</span>
+      <span role="button" id="js_match_event_yesterday_btn">Yesterday</span>
+      <span>|</span>
+      <span id="js_match_event_tommorrow_btn">Tomorrow</span>
+      <span>|</span>
+      <a href="#">More days &gt; &gt;</a>
+    </div>
+    
+    <div class="nav-games">
+      <a href="" class="link_event_live">LIVE</a>
+      <span>|</span>
+      <a href="#" class="link_event_finished">Finished</a>
+      <span>|</span>
+    
+    </div>
+    
+    <div class="nav-refresh-state">
+      <span>Auto-Refresh (30) </span>
+      <span>| </span>
+      <a href="#">TURN ON</a>
+      <span>|</span>
+      <a href="#" class="nav_refresh_link">REFRESH NOW</a>
+    </div>
+  </nav>
+  
+  <main class="app-main">
+    <div class="games-container" id="js_game_container">
+      Loading
+    </div>
+  </main>
+  
+  <div class="footer-text">
+    <a href="#top">Top</a>
+    <p>
+      SportBlitz provides live football scores - mobile livescore.
+      This mobile version has different parameters than our main
+      website for technical reasons. Gamble Responsibly. Gambling
+      Therapy. 18+
+    </p>
+  </div>
+  
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Kanit, Arial, Helvetica, sans-serif;
+}
+
+html{
+    font-size: 11px;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+a{
+    color: dodgerblue
+}
+
+a:hover{
+    color: rgb(114, 38, 38);
+    text-decoration: none;
+}
+
+.active{
+    color: rgb(114, 38, 38);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.active:hover{
+    text-decoration: underline;
+}
+.app-header{
+    background-color: black;
+    color: white;
+    padding: .3rem 1rem;
+}
+
+.logo{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    user-select: none;
+    cursor: pointer;
+}
+
+
+
+.app-main-nav,main, .footer-text{
+    padding: .5rem 1rem
+}
+
+.nav-date, .nav-games, .nav-refresh-state{
+    border-bottom: 1px solid black;
+    margin: .2rem 0
+}
+
+.game-item{
+    margin-bottom: .5rem;
+}
+
+.game-header{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    padding: 0 0.5rem
+}
+
+.game-header a{
+    color: white;
+}
+.game-data, .game-event-match{
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+.game-data{
+    padding: 0 .5rem;
+}
+
