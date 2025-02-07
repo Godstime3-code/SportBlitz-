@@ -79,11 +79,11 @@ const getLiveEvent = async e => {
 
   // Group data by country
   const groupedData = liveEvents.reduce((acc, current) => {
-    if (!acc[current.country_name]) {
-      acc[current.country_name] = [];
+    if (!acc[current.league_id]) {
+      acc[current.league_id] = [];
     }
 
-    acc[current.country_name].push(current);
+    acc[current.league_id].push(current);
 
     return acc;
   }, {});
@@ -94,7 +94,7 @@ console.log(groupedData)
     // this is where the header is generated
     liveEventHTML += `<div class="game-item">
         <div class="game-header">
-            <p class="game-country">${country_name}:</p>
+            <p class="game-country">${items[0]['country_name']}:</p>
             <p class="game-country-league">${items[0]["league_name"]}</p>
            
         </div>`;
